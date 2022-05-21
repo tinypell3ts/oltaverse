@@ -65,7 +65,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta property="og:url" content="https://oltaisland.netlify.app/" />
         <meta
           property="og:image"
-          content="http://my.site.com/images/preview.png"
+          content="https://oltaisland.netlify.app/images/preview.png"
         />
         <meta property="og:description" content="Welcome to the island 🏝" />
       </Head>
