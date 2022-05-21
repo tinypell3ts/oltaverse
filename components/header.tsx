@@ -28,7 +28,7 @@ export default function Header() {
   }
 
   return (
-    <header className=" w-full p-5">
+    <header className="fixed z-10 w-full p-5">
       <div className="flex items-center justify-end">
         {wallet?.accounts[0].address ? (
           <>
@@ -37,7 +37,7 @@ export default function Header() {
               rel="noreferrer"
               href={BLOCK_EXPLORER_URL(wallet?.accounts[0]?.address)}
             >
-              <div className="mx-2 flex hover:text-indigo-800">
+              <div className="mx-2 flex text-pink-200 hover:text-pink-200">
                 <span>
                   {wallet?.accounts[0]?.address.slice(0, 4)}...
                   {wallet?.accounts[0]?.address.slice(-4)}

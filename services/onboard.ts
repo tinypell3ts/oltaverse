@@ -1,9 +1,7 @@
 import injectedModule from "@web3-onboard/injected-wallets";
 import { init } from "@web3-onboard/react";
 import walletConnectModule from "@web3-onboard/walletconnect";
-
-
-
+import { RPC_URL } from "../constants";
 const walletConnect = walletConnectModule();
 const injected = injectedModule();
 
@@ -14,7 +12,7 @@ export default init({
       id: "0x13881",
       token: "MATIC",
       label: "Polygon Mumbai",
-      rpcUrl: "https://polygon-rpc.com/",
+      rpcUrl: RPC_URL,
     },
   ],
   appMetadata: {

@@ -1,8 +1,8 @@
-import NFTAbi from "./abis/nft.json";
+const PRIVATE_KEY = process.env.PRIVATE_KEY;
+const RPC_URL = process.env.RPC_URL;
+const EDITIONS_CONTRACT = process.env.EDITIONS_CONTRACT;
 
-export const contracts: Contracts = {
-  nft: {
-    address: process.env.NEXT_PUBLIC_NFT_CONTRACT_ADDRESS ?? "0x",
-    abi: NFTAbi.abi,
-  },
-};
+const SUBGRAPH_ENDPOINT =
+  "https://api.thegraph.com/subgraphs/name/olta-art/olta-editions-mumbai";
+
+export { SUBGRAPH_ENDPOINT, RPC_URL, PRIVATE_KEY, EDITIONS_CONTRACT };
