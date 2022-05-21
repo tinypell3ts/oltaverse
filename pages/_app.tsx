@@ -47,7 +47,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   }, [wallet]);
 
   return (
-    <div className="m-4">
+    <div className=" bg-indigo-500">
       <Header />
       <Component {...pageProps} />
     </div>
