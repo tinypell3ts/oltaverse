@@ -1,5 +1,5 @@
 const PRIVATE_KEY = process.env.PRIVATE_KEY;
-const RPC_URL = process.env.RPC_URL;
+const RPC_URL = process.env.NEXT_PUBLIC_RPC_URL;
 const EDITIONS_CONTRACT = process.env.EDITIONS_CONTRACT;
 
 const SUBGRAPH_ENDPOINT =
