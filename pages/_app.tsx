@@ -60,14 +60,30 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <meta property="og:title" content="Olta Island" />
-        <meta property="og:type" content="website" />
+        <title>OLTA Island</title>
+        <meta name="description" content="Welcome to the island 🏝" />
+
         <meta property="og:url" content="https://oltaisland.netlify.app/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="OLTA Island" />
+        <meta property="og:description" content="Welcome to the island 🏝" />
         <meta
           property="og:image"
           content="https://oltaisland.netlify.app/images/preview.png"
         />
-        <meta property="og:description" content="Welcome to the island 🏝" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="oltaisland.netlify.app" />
+        <meta
+          property="twitter:url"
+          content="https://oltaisland.netlify.app/"
+        />
+        <meta name="twitter:title" content="OLTA Island" />
+        <meta name="twitter:description" content="Welcome to the island 🏝" />
+        <meta
+          name="twitter:image"
+          content="https://oltaisland.netlify.app/images/preview.png"
+        />
       </Head>
       <div className=" h-screen w-screen bg-indigo-500">
         <QueryClientProvider client={queryClient}>
