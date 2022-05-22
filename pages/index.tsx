@@ -129,9 +129,9 @@ export default function App() {
         .then((res) => res.json())
         .catch((e) => console.log("e =>", e)),
       {
-        loading: `Purchasing land...`,
-        success: "Land purchased 🚀",
-        error: "Error purchasing land, please try again...",
+        loading: `claiming land...`,
+        success: "Land claimed 🚀",
+        error: "Error claiming land, please try again...",
       },
       { position: "bottom-right" }
     );
@@ -145,7 +145,7 @@ export default function App() {
       <div className="absolute bg-transparent p-10">
         <h1 className="text-5xl font-bold tracking-tight">OLTA ISLAND</h1>
         <h2 className="w-2/3 text-xl font-semibold tracking-tight">
-          Connect your wallet and click on a piece of land to purchase it.
+          Connect your wallet and click on a piece of land to claim it.
         </h2>
       </div>
       <Canvas
@@ -167,10 +167,10 @@ export default function App() {
       <Modal
         isOpen={isOpen}
         toggleModal={() => setOpen((pm) => !pm)}
-        title={`Buy Land - Plot #${currentIndex}`}
+        title={`Plot #${currentIndex}`}
       >
         <Button disabled={!connectedWallet} onClick={handleMint}>
-          Purchase
+          Claim
         </Button>
       </Modal>
       <Modal
