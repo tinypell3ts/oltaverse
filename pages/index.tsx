@@ -50,7 +50,7 @@ function Cell({
       <meshBasicMaterial
         color={
           isSold
-            ? getBackgroundColor(index.toString())
+            ? getBackgroundColor(soldToken?.owner?.id)
             : hovered
             ? "hotpink"
             : color
